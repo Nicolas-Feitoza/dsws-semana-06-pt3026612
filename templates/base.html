@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="/">Flasky</a>
+         <a class="navbar-brand" href="/">Avaliação contínua: 050</a>
       </div>
       <div class="navbar-collapse collapse">
          <ul class="nav navbar-nav">
@@ -39,4 +39,9 @@
    {% endfor %}
    {% block page_content %}{% endblock %}
 </div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
 {% endblock %}
